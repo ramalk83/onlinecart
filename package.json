@@ -1,11 +1,16 @@
 {
   "name": "onlinecart",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramalk83/onlinecart.git"
   },
   "author": "",
   "license": "ISC",
@@ -25,7 +30,12 @@
     "nodemon": "^2.0.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6"
+    "eslint": "^7.9.0",
+    "eslint-plugin-react": "^7.21.2",
+    "nodemon": "^2.0.4"
   },
-  "engines": {"node":"12.4.0", "npm": "6.9.0"}
+  "engines": {
+    "node": "12.4.0",
+    "npm": "6.9.0"
+  }
 }
